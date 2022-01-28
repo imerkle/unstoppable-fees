@@ -35,7 +35,7 @@ class App extends React.Component {
     this.uauth
       .loginWithPopup()
       .then(() => {
-        this.uauth.user().then((user) => {
+        this.uauth.user().then(async (user) => {
           var o = await getTxs(user.wallet_address)
           this.setState({ user, o })
         })
@@ -65,7 +65,7 @@ class App extends React.Component {
     } else {
       return (
         <div>
-          <button onClick={() => { this.handleLogin() }}> Login with Unstoppable</button>
+          <button className="usdbutton" onClick={() => { this.handleLogin() }}> Login with Unstoppable</button>
         </div>
       );
     }
