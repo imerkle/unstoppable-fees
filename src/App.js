@@ -56,7 +56,7 @@ class App extends React.Component {
     if (this.state.user) {
       var o = this.state.o;
       return (
-        <div>
+        <div class="textbody">
           < p > You've spent <span id="gasFeeTotal">{o.gasFeeTotalStr}</span> on gas. Right now, that's < span id="tokenusd" > {o.tokenusdStr}</span >.</p >
           <p>You used <span id="gasUsedTotal">{o.gasUsedTotalStr}</span> gas to send <span id="nOut">{o.nOut}</span> transactions, with an average price of <span id="gasPricePerTx">{o.gasPricePerTxStr}</span> gwei.</p>
           <p><span id="nOutFail">{o.nOutFail}</span> of them failed, costing you <span id="gasFeeTotalFail">{o.gasFeeTotalFailStr}</span>.</p>
