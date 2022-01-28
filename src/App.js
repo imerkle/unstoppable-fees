@@ -36,7 +36,8 @@ class App extends React.Component {
       .loginWithPopup()
       .then(() => {
         this.uauth.user().then((user) => {
-          this.setState({ user })
+          var o = await getTxs(user.wallet_address)
+          this.setState({ user, o })
         })
       })
       .catch((err) => {
