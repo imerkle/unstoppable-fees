@@ -1,3 +1,11 @@
+# fees.wtf
+
+name: fees.wtf? 
+
+demo : https://streamable.com/z2st0a
+
+discord: imerkle#6105
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
